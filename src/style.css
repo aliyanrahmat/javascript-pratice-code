@@ -1,0 +1,21 @@
+/* ul{
+    display: flex;
+    background-color: aqua;
+}
+nav li{
+    list-style: none;
+    padding: 0 23px;
+} */
+
+.yellow{
+    background-color: yellow;
+    color:black;
+}
+
+.red{
+    background-color: red;
+    color:white;
+}
+.text{
+    font-size:xx-large;
+}
