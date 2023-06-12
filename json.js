@@ -379,21 +379,28 @@
 // }
 // a()
 
+// cookies in js 
 
-// hackerman.....
+// console.log(document.cookie)
+// document.cookie="name= aliyanrahmat-1122"
+// document.cookie="father name = rahmat"
+// document.cookie="age 22"
+//     let key = prompt("enter your key")
+//     let value = prompt("enter your value")
+//     document.cookie = `${encodeURIcomponent(key)}=${encodeURIcomponent(value)}`
+//     console.log(document.cookie)
 
-setTimeout(()=>{
-    console.log("hacking mobile phone...")
-},2000)
 
-setTimeout(()=>{
-    console.log("fetching user id and password")
-},4000)
+// localstorage and related methods
 
-const changeBgRed = ()=>{
-  document.body.firstElementChild.style.background="red"
+let key = prompt("enter key you want to set")
+let value= prompt("enter value you want to set")
+localStorage.setItem(key,value)
+
+console.log(`the value at ${key} is ${localStorage.getItem(key)}`)
+if (key =="red" || key =="blue"){
+    localStorage.removeItem(key)
 }
-
-
-
-
+if (key == 0){
+    localStorage.clear()
+}
