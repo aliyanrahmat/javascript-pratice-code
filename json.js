@@ -393,14 +393,39 @@
 
 // localstorage and related methods
 
-let key = prompt("enter key you want to set")
-let value= prompt("enter value you want to set")
-localStorage.setItem(key,value)
+// let key = prompt("enter key you want to set")
+// let value= prompt("enter value you want to set")
+// localStorage.setItem(key,value)
 
-console.log(`the value at ${key} is ${localStorage.getItem(key)}`)
-if (key =="red" || key =="blue"){
-    localStorage.removeItem(key)
+// console.log(`the value at ${key} is ${localStorage.getItem(key)}`)
+// if (key =="red" || key =="blue"){
+//     localStorage.removeItem(key)
+// }
+// if (key == 0){
+//     localStorage.clear()
+// }
+
+// object oriented programming
+
+class railwayForm{
+    submit(){
+        alert(this.name + ":form submit")
+
+    }
+    cancel(){
+        alert(this.name + ":this form is cancelled")
+    }
+    fill(givename){
+    this.name = givename
 }
-if (key == 0){
-    localStorage.clear()
 }
+
+
+let harryform = new railwayForm()
+harryform.fill("harry")
+let aliyan =  new railwayForm()
+aliyan.fill ("aliyan")
+
+harryform.submit()
+aliyan.submit()
+aliyan.cancel()
